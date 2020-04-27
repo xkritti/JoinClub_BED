@@ -9,7 +9,7 @@ const url = 'https://passport.psu.ac.th/authentication/authentication.asmx?wsdl'
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.set("port", process.env.PORT || 8899);
+app.set("port", process.env.PORT);
 
 let club_lists = [
     {
